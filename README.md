@@ -1,27 +1,49 @@
-# Http
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+# 📦 Angular Deep Dive – HTTP Requests & Error Handling
 
-## Development server
+Projet Angular développé dans le cadre de la section "Sending HTTP Requests & Handling Responses" de la formation _The Complete Guide (2025 Edition)_.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🎯 Objectif
+Mettre en œuvre les concepts fondamentaux liés aux requêtes HTTP avec Angular :
+- Communication avec un backend (Node/Express mocké)
+- Chargement dynamique des données via `HttpClient`
+- Ajout et suppression optimiste avec rollback en cas d’erreur
+- Gestion des erreurs centralisée avec un `ErrorService`
+- Utilisation des signaux (`signal`, `inject`) pour stocker localement les données
+- Architecture modulaire avec services dédiés (`PlacesService`)
 
-## Code scaffolding
+## 🔍 Fonctionnalités
+- 📥 **GET** des lieux disponibles et des lieux favoris utilisateur
+- ➕ **PUT** pour ajouter un lieu aux favoris (optimistic update)
+- 🗑️ **DELETE** pour retirer un lieu des favoris (optimistic update + rollback)
+- ⚠️ Gestion des erreurs via interception des requêtes échouées
+- ⏳ Fallback de chargement pendant les appels HTTP
+- 🔁 Rechargement dynamique via `pipe`, `tap`, `catchError` de RxJS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🖼️ Aperçu de l’application
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Aperçu du projet](public/screenshot.png)
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🧱 Stack
+- Angular 18 (standalone components, signal, inject)
+- RxJS (`tap`, `catchError`, `throwError`)
+- HttpClientModule
+- Node.js pour mocker une API REST
 
-## Running end-to-end tests
+## 🚀 Lancement
+```bash
+npm install
+npm run start
+```
+⚠️ Le backend doit être démarré séparément dans `/backend`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 🔗 Liens utiles
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [👉 Formation Udemy](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
+- [👤 Mon profil LinkedIn](https://www.linkedin.com/in/kevin-maldonado-a17864295)
