@@ -46,4 +46,4 @@ npm run start
 ## 🔗 Liens utiles
 
 - [👉 Formation Udemy](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
-- [👤 Mon profil LinkedIn](https://www.linkedin.com/in/kevin-maldonado-a17864295)
+- [👤 Mon profil LinkedIn](https://www.linkedin.com/in/kevin-maldonado-km)
